@@ -28,7 +28,7 @@ def _entry(self):
     
 
     
-def start(thread = False):
+def start():
     """
     This is a convenience function that allows this xapp to run in Docker
     for "real" (no thread, real SDL), but also easily modified for unit testing
@@ -46,7 +46,7 @@ def start(thread = False):
     
 
      #self.createHandlers()
-    managerxapp.run(thread)
+    managerxapp.run()
      
     
 def stop(self):

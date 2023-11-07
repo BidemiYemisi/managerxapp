@@ -1,12 +1,12 @@
 {
-    "name": "Managerxapp-python",
+    "name": "managerxapp",
     "version": "1.0.0",
     "containers": [
         {
-            "name": "Managerxapp-python",
+            "name": "managerxapp",
             "image": {
                 "registry": "registry.hub.docker.com",
-                "name": "109010/Managerxapp-python",
+                "name": "109010/managerxapp",
                 "tag": "1.0.0"
             }
         }
@@ -15,24 +15,24 @@
         "ports": [
             {
                 "name": "http",
-                "container": "Managerxapp-python",
+                "container": "managerxapp",
                 "port": 8080,
                 "description": "http service"
             },
             {
                 "name": "rmrroute",
-                "container": "Managerxapp-python",
+                "container": "managerxapp",
                 "port": 4561,
-                "description": "rmr route port for Managerxapp-python xapp"
+                "description": "rmr route port for managerxapp xapp"
             },
             {
                 "name": "rmrdata",
-                "container": "Managerxapp-python",
+                "container": "managerxapp",
                 "port": 4560,
                 "rxMessages": ["A1_POLICY_REQ"],
                 "txMessages": ["A1_POLICY_RESP", "A1_POLICY_QUERY"],
                 "policies": [20002],
-                "description": "rmr data port for Managerxapp-python"
+                "description": "rmr data port for managerxapp"
             }
         ]
     },

@@ -43,4 +43,4 @@ ENV CONFIG_FILE=/tmp/init/config.json
 # ENV DBAAS_SERVICE_HOST=service-ricplt-dbaas-tcp.ricplt.svc.cluster.local
 
 #Run
-CMD run-managerxapp-python.py
+CMD run-managerxapp.py

@@ -24,7 +24,7 @@ def read(fname):
 
 
 setup(
-    name='Managerxapp-python',
+    name='managerxapp',
     version='1.0.0',
     packages=find_packages(),
     url='https://github.com/BidemiYemisi/ric_xapp.git',
@@ -33,6 +33,6 @@ setup(
     python_requires='>=3.8',
     long_description=read('README.md'),
     install_requires=["ricxappframe>=1.1.1,<2.3.0"],
-    entry_points={"console_scripts": ["run-managerxapp-python.py=src.main:start"]},  # adds a magical entrypoint for Docker
+    entry_points={"console_scripts": ["run-managerxapp.py=src.main:start"]},  # adds a magical entrypoint for Docker
     data_files=[("", ["LICENSE.txt"])],
 )

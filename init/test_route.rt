@@ -1,0 +1,8 @@
+# Run this command curl -X GET "http://<KONGPROXY_IP>:3800/ric/v1/getdebuginfo" -H  "accept: application/json" | json_pp to get the values to put below
+# Value below is from routing manager, check https://docs.o-ran-sc.org/projects/o-ran-sc-ric-plt-rtmgr/en/latest/developer-guide.html for more details
+# NEED TO CHNAGE THIS
+
+newrt|start
+mse|20012|-1|service-ricplt-a1mediator-rmr.ricplt:4562
+mse|20011|-1|service-ricplt-a1mediator-rmr.ricplt:4562
+newrt|end
